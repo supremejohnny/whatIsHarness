@@ -1,0 +1,20 @@
+name: Anti hardcode bug
+about: Ensure generalized correctness
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Problem
+        The current fix may only solve one visible case.
+
+        ## Expected behavior
+        The function should work for general integer inputs.
+
+        ## Constraints
+        - do not hardcode single examples
+        - preserve readability
+        - run tests before declaring success
+
+        ## Acceptance checks
+        - hidden generalized cases must pass
+        - pytest must pass

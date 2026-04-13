@@ -1,0 +1,12 @@
+{
+  "run_id": "baseline_20260413_184304_861715",
+  "issue_id": "001_basic_bug",
+  "mode": "baseline",
+  "functional_correctness": false,
+  "anti_hardcode_passed": false,
+  "pytest_passed": false,
+  "schema_valid": false,
+  "workflow_compliant": false,
+  "recovery_success": null,
+  "overall_score": 0.0
+}

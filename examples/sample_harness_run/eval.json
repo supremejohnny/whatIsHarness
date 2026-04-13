@@ -1,0 +1,12 @@
+{
+  "run_id": "harness_20260413_184304_862400",
+  "issue_id": "001_basic_bug",
+  "mode": "harness",
+  "functional_correctness": true,
+  "anti_hardcode_passed": true,
+  "pytest_passed": true,
+  "schema_valid": true,
+  "workflow_compliant": true,
+  "recovery_success": null,
+  "overall_score": 1.0
+}

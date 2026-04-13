@@ -1,0 +1,13 @@
+from enum import Enum
+
+
+class WorkflowState(str, Enum):
+    ISSUE_LOADED = "ISSUE_LOADED"
+    PLAN_CREATED = "PLAN_CREATED"
+    FILES_READ = "FILES_READ"
+    PATCH_APPLIED = "PATCH_APPLIED"
+    TESTS_RUN = "TESTS_RUN"
+    EVALS_RUN = "EVALS_RUN"
+    SUCCESS = "SUCCESS"
+    RETRY = "RETRY"
+    FAILED = "FAILED"
