@@ -1,0 +1,23 @@
+name: Workflow contract bug
+about: Fix with strict workflow contract
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Problem
+        Fix the bug and strengthen verification.
+
+        ## Expected behavior
+        - correct implementation
+        - tests updated or added
+        - structured final report
+
+        ## Constraints
+        - must run tests
+        - final output must match the repository result schema
+        - if tests fail, retry before declaring failure
+
+        ## Acceptance checks
+        - pytest must pass
+        - result schema must validate
+        - workflow trace must include TESTS_RUN

@@ -1,0 +1,20 @@
+name: Basic bug fix
+about: Fix a basic defect
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Problem
+        The add function returns the wrong value.
+
+        ## Expected behavior
+        It should return a + b.
+
+        ## Constraints
+        - only modify app/ and tests/
+        - run tests before declaring success
+
+        ## Acceptance checks
+        - pytest must pass
+        - add(1,1) should return 2
+        - do not remove existing tests

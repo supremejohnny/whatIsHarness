@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness-demo"
+version = "0.1.0"
+description = "Tiny repo that makes harness engineering visible"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+openai = [
+  "openai>=1.0.0",
+  "openai-agents>=0.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*", "harness_demo*"]
+exclude = ["issues*", "artifacts*", "examples*", "docs*", "tests*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
