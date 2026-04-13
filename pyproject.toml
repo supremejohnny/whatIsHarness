@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -17,6 +17,10 @@ openai = [
   "openai>=1.0.0",
   "openai-agents>=0.0.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["app*", "harness_demo*"]
+exclude = ["issues*", "artifacts*", "examples*", "docs*", "tests*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]

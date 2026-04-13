@@ -75,9 +75,22 @@ cd harness-demo
 
 ### 2. Create a virtual environment
 
+macOS/Linux:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+```
+
+Windows PowerShell:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Windows CMD:
+```bat
+python -m venv .venv
+.\.venv\Scripts\activate.bat
 ```
 
 ### 3. Install dependencies
@@ -85,6 +98,8 @@ source .venv/bin/activate
 ```bash
 pip install -e .[dev]
 ```
+
+If editable install fails with a setuptools package discovery error, ensure you are using the latest `pyproject.toml` in this repo (it explicitly includes only `app` and `harness_demo` packages).
 
 ### 4. Run tests
 
